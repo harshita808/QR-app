@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboardSignedOut">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topbar">
+        <include layout="@layout/topbar_snippet"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/backgrround_drop"
+        android:layout_below="@+id/topbar"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/scan"
+                app:cardCornerRadius="5dp"
+                android:elevation="10dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_scan"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/scanImg"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan QR"
+                        android:textSize="28sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/appfont"
+                        android:textColor="@color/appcolor"
+                        android:padding="10dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/scan"
+                android:id="@+id/generate"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="10dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_generate"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/genImg"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Generate QR"
+                        android:textSize="28sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/appfont"
+                        android:textColor="@color/appcolor"
+                        android:padding="10dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/generate"
+                android:id="@+id/login"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="5dp"
+                android:elevation="20dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_signin"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/loginImg"
+                        android:layout_margin="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Login"
+                        android:textSize="28sp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/appfont"
+                        android:textColor="@color/appcolor"
+                        android:padding="10dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_bottom_round_login">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to generate QR"
+            android:fontFamily="@font/appfont"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:id="@+id/qrNumber"
+            android:textSize="22sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+</RelativeLayout>

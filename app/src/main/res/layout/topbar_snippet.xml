@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appcolor"
+    android:elevation="7dp"
+    android:paddingRight="40dp"
+    >
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/appcolor"
+    android:layout_height="65dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyQR"
+        android:fontFamily="@font/appfont"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
